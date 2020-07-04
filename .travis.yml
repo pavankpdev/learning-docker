@@ -1,19 +1,19 @@
 sudo: required
-language: generic
 services:
   - docker
 before_install:
   - docker build -t dockerbuild/newbuild -f Dockerfile.dev .
 script:
-  - docker run -e CI=true dockerbuild/newbuild npm run test -- --coverage
+  - docker run dockerbuild/newbuild npm run test -- --coverage
 deploy:
   provider: elasticbeanstalk
   region: "ap-south-1"
   app: "dockerkp"
   env: "Dockerkp-env"
   bucket_name: "elasticbeanstalk-ap-south-1-701994403871"
-  bucket_path: "dockerkplearning"
+  bucket_path: "dockerkplearning-1"
   on:
     branch: master
-  access_key_id: "AKIA2G4RARAP6O4V4YGS"
-  secret_access_key: "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"
+  access_key_id: $AWS_ACCESS_KEY
+  secret_access_key:
+    secure: "$AWS_SECRET_KEY"
