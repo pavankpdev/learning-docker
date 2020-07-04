@@ -15,5 +15,5 @@ deploy:
   bucket_path: "dockerkplearning"
   on:
     branch: master
-  access_key_id: $AWS_ACCESS_KEY
-  secret_access_key: $AWS_SECRET_KEY
+  access_key_id: "AKIA2G4RARAP6O4V4YGS"
+  secret_access_key: "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"
