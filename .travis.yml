@@ -9,8 +9,8 @@ script:
 deploy:
   provider: elasticbeanstalk
   region: "ap-south-1"
-  app: "dockerkplearning"
-  env: "Dockerkplearningenv-env"
+  app: "dockerkp"
+  env: "Dockerkp-env"
   bucket_name: "elasticbeanstalk-ap-south-1-701994403871"
   bucket_path: "dockerkplearning"
   on:
