@@ -3,6 +3,6 @@ language: generic
 services:
   - docker
 before_install:
-  - docker build -t dockerbuild/newBuild -f Dockerfile.dev .
+  - docker build -t dockerbuild/newbuild -f Dockerfile.dev .
 script:
   - docker run -e CI=true dockerbuild/newbuild npm run test -- --coverage
