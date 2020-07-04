@@ -5,4 +5,4 @@ services:
 before_install:
   - docker build -t dockerbuild/newBuild -f Dockerfile.dev .
 script:
-  - docker run -e CI=true dockerbuild/newBuild npm run test -- --coverage
+  - docker run -e CI=true dockerbuild/newbuild npm run test -- --coverage
