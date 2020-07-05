@@ -1,4 +1,9 @@
 sudo: required
+
+language: node_js
+node_js:
+  - "stable"
+
 services:
   - docker
 before_install:
@@ -8,8 +13,8 @@ script:
 deploy:
   provider: elasticbeanstalk
   region: "ap-south-1"
-  app: "dockerkp"
-  env: "Dockerkp-env"
+  app: "dockkp123"
+  env: "Dockkp123-env"
   bucket_name: "elasticbeanstalk-ap-south-1-701994403871"
   bucket_path: "dockerkplearning-1"
   on:
