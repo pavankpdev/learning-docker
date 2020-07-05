@@ -7,8 +7,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p> byesspppp</p>
-        Learn React
+        <p> ok i was changed on the feature branch</p>
       </header>
     </div>
   );
